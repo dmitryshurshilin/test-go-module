@@ -1,6 +1,7 @@
 package test
 
 import (
+	"fmt"
 	"log"
 	"strconv"
 )
@@ -15,4 +16,8 @@ func ConvertStringToInt(value string) int {
 		log.Fatal(err)
 	}
 	return res
+}
+
+func GetLogMessage(m string) string {
+	return fmt.Sprintf("LOG: %s", m)
 }

@@ -19,3 +19,12 @@ func TestConvertStringToInt(t *testing.T) {
 		t.Errorf("got %q, wanted %q", got, want)
 	}
 }
+
+func TestGetLogMessage(t *testing.T) {
+	got := GetLogMessage("message")
+	want := "LOG: message"
+
+	if got != want {
+		t.Errorf("got %q, wanted %q", got, want)
+	}
+}
